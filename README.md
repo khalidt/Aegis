@@ -2,6 +2,14 @@
 
 **Aegis** is a modern macOS desktop application that provides secure end-to-end message encryption using a hybrid RSA-AES design.   It combines the speed of symmetric AES encryption with the robust key exchange and digital signature capabilities of RSA.
 
+<table>
+  <tr>
+    <td><img width="1092" height="1100" alt="1" src="https://github.com/user-attachments/assets/c4f1bc54-294c-4dcd-9994-90bd45e7cf9f" />
+    <td><img width="1092" height="1100" alt="2" src="https://github.com/user-attachments/assets/fb47a519-815e-4ba2-a788-33cbc537ead0" />
+    <td><img width="1092" height="1100" alt="3" src="https://github.com/user-attachments/assets/62ddb9c7-a857-4a2e-9d48-e2997f778ad3" />
+  </tr>
+</table>
+
 ---
 
 ## ✨ Features
@@ -47,7 +55,7 @@
 
 - **Swift 5 + SwiftUI**
 - **CryptoKit** : for AES-GCM encryption
-- **Security framework** — for RSA keypair management and signing
+- **Security framework** : for RSA keypair management and signing
 - **AppKit** : for Keychain access and About panel
 - **macOS 12+** : native UI, backward compatible to macOS 11 with minimal adjustments
 
@@ -83,10 +91,11 @@
 }
 
 ```
-## Screenshots 
-<img width="1092" height="1100" alt="1" src="https://github.com/user-attachments/assets/c4f1bc54-294c-4dcd-9994-90bd45e7cf9f" />
 
-<img width="1092" height="1100" alt="2" src="https://github.com/user-attachments/assets/fb47a519-815e-4ba2-a788-33cbc537ead0" />
+## 📜 License
 
-<img width="1092" height="1100" alt="3" src="https://github.com/user-attachments/assets/62ddb9c7-a857-4a2e-9d48-e2997f778ad3" />
+GPLv3 License © 2025 — Khalid Alkhaldi
+See LICENSE for details.
+
+---
 
