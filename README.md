@@ -13,6 +13,20 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/khalidt/Aegis/actions/workflows/ci.yml">
+    <img src="https://github.com/khalidt/Aegis/actions/workflows/ci.yml/badge.svg" alt="Build Status">
+  </a>
+  <a href="https://github.com/khalidt/Aegis/releases">
+    <img src="https://img.shields.io/github/v/release/khalidt/Aegis?include_prereleases&sort=semver" alt="Latest Release">
+  </a>
+  <img src="https://img.shields.io/github/downloads/khalidt/Aegis/total" alt="Downloads">
+  <a href="https://github.com/khalidt/Aegis/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/khalidt/Aegis" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/platform-macOS-lightgrey?logo=apple" alt="Platform">
+</p>
+
 **Aegis** is a modern macOS desktop application that provides secure end-to-end message encryption using a hybrid RSA-AES design.   It combines the speed of symmetric AES encryption with the robust key exchange and digital signature capabilities of RSA.
 
 <table>
