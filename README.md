@@ -44,6 +44,15 @@
 - 💾 **Local key management** no servers, no data collection  
 
 ---
+## 🧩 Requirements
+
+- 🖥️ **macOS 14.0 (Sonoma)** or later  
+- 🧰 Optional: [Homebrew](https://brew.sh) for command-line installation
+
+> ⚠️ Aegis is not compatible with macOS versions earlier than 14.0.
+
+---
+
 ## 📦 Installation
 
 ### 🍺 Option 1: Install via Homebrew *(recommended)*
@@ -95,7 +104,7 @@ open Aegis.xcodeproj
 ```
 
 In **Xcode**:
-1. Open `Aegis.xcodeproj` in **Xcode** (macOS 15).
+1. Open `Aegis.xcodeproj` in **Xcode** (macOS >= 14.6).
 2. Select the **Device** scheme.
 3. Choose target “Any Mac (Apple Silicon, Intel)”.
 4. Build and run (`⌘R`). (Go to **Product → Build** or **Product → Run**.)
