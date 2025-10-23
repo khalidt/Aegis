@@ -1,6 +1,6 @@
 //
 //  DeviceApp.swift
-//  Device
+//  Aegis
 //
 //  Created by Khalid Alkhaldi on 10/20/25.
 //
