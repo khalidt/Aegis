@@ -1,5 +1,14 @@
 # 🔒 Aegis — Hybrid RSA/AES Secure Messages (macOS)
 
+<!-- <img style=" display: block; margin-left: auto;margin-right: auto;" alt="1" src="/assets/Device.png" width="48" /> -->
+<div align="center">
+
+  ![Aegis](/assets/Device120.png)
+  
+</div>
+    
+
+
 **Aegis** is a modern macOS desktop application that provides secure end-to-end message encryption using a hybrid RSA-AES design.   It combines the speed of symmetric AES encryption with the robust key exchange and digital signature capabilities of RSA.
 
 <table>
