@@ -40,26 +40,81 @@
 - 🔐 **Hybrid encryption** (AES-GCM + RSA-OAEP)  
 - 🖋️ **Digital signatures** with RSA-PSS for message integrity  
 - 📎 **Base64-encoded JSON envelope** for easy sharing  
-- 💬 **Clean SwiftUI interface** — only two buttons: *Encrypt* and *Decrypt*  
-- 💾 **Local key management** — no servers, no data collection  
+- 💬 **Clean SwiftUI interface** only two buttons: *Encrypt* and *Decrypt*  
+- 💾 **Local key management** no servers, no data collection  
 
 ---
-## Install
+## 📦 Installation
 
-Download the latest **Aegis for macOS** from the [Releases](https://github.com/khalidt/Aegis/releases) page and open the `.dmg`.
-- `Aegis.dmg` (recommended) or `Aegis-app.zip`
+### 🍺 Option 1: Install via Homebrew *(recommended)*
 
-> First launch: macOS Gatekeeper may warn about an app from the internet. Right-click the app → **Open** → **Open**.
+You can install **Aegis** directly from your terminal using [Homebrew](https://brew.sh):
 
-## Build from source
+```bash
+brew tap khalidt/aegis
+brew install --cask aegis
+```
 
-Requirements: Xcode (latest), macOS 15.
+Homebrew will automatically download, verify, and place **Aegis.app** in your `/Applications` folder.
+
+> 🛡️ First launch and macOS Security Note:
+Since Aegis is distributed outside the Mac App Store, macOS Gatekeeper may display a warning the first time you open it.
+Just go to System Settings → Privacy & Security → Allow Anyway, or right-click → Open to trust the app.
+
+To update later:
+
+```bash
+brew upgrade --cask aegis
+```
+
+To uninstall completely:
+
+```bash
+brew uninstall --cask aegis
+```
+---
+
+### 💾 Option 2: Download manually
+
+Download the latest version of **Aegis** from the [Releases page](https://github.com/khalidt/Aegis/releases):
+
+1. Download the latest **Aegis-vX.X.X-app.zip** or **Aegis-vX.X.X.dmg** file.  
+2. Unzip it, you’ll see **Aegis.app**.  
+3. Drag it into your **Applications** folder.
+
+---
+
+### 🧑‍💻 Option 3: Build from source in Xcode
+
+If you’d like to build **Aegis** yourself:
 
 ```bash
 git clone https://github.com/khalidt/Aegis.git
 cd Aegis
 open Aegis.xcodeproj
 ```
+
+In **Xcode**:
+1. Open `Aegis.xcodeproj` in **Xcode** (macOS 15).
+2. Select the **Device** scheme.
+3. Choose target “Any Mac (Apple Silicon, Intel)”.
+4. Build and run (`⌘R`). (Go to **Product → Build** or **Product → Run**.)
+
+Or build via Terminal:
+
+```bash
+xcodebuild -project Aegis.xcodeproj \
+           -scheme Device \
+           -configuration Release \
+           -destination 'platform=macOS' \
+           build
+```
+
+Your compiled app will appear under:
+```
+~/Library/Developer/Xcode/DerivedData/.../Build/Products/Release/Aegis.app
+```
+
 ---
 
 ## 🧩 How It Works
@@ -96,16 +151,7 @@ open Aegis.xcodeproj
 - **CryptoKit** : for AES-GCM encryption
 - **Security framework** : for RSA keypair management and signing
 - **AppKit** : for Keychain access and About panel
-- **macOS 12+** : native UI, backward compatible to macOS 11 with minimal adjustments
-
----
-
-## 🖥️ Building in Xcode
-
-1. Open `Aegis.xcodeproj` in **Xcode** (macOS 12 or newer).
-2. In *Signing & Capabilities*, select your Team and enable **Hardened Runtime** or sign to be run locally.
-3. Choose target “Any Mac (Apple Silicon, Intel)”.
-4. Build and run (`⌘R`).
+- **macOS 15+** : native UI
 
 ---
 
@@ -155,3 +201,7 @@ See LICENSE for details.
 
 ---
 
+
+### ❤️ Enjoy!
+
+If you encounter issues, please open a [GitHub Issue](https://github.com/khalidt/Aegis/issues) with details or screenshots.
