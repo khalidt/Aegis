@@ -91,7 +91,7 @@ private func stripPEMBlock(_ pemData: Data, header: String) throws -> Data {
     return der
 }
 
-/// Wrap PKCS#1 RSAPublicKey DER inside SPKI DER
+// Wrap PKCS#1 RSAPublicKey DER inside SPKI DER
 private func wrapRSAPKCS1toSPKI(_ pkcs1DER: Data) -> Data {
     let oid: [UInt8]  = [0x06, 0x09, 0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x01, 0x01]
     let null_: [UInt8] = [0x05, 0x00]

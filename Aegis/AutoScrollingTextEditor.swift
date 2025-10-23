@@ -1,9 +1,6 @@
-//
 //  AutoScrollingTextEditor.swift
 //  Aegis
-//
 //  Created by Khalid Alkhaldi on 10/21/25.
-//
 
 import SwiftUI
 import AppKit
@@ -24,7 +21,7 @@ struct AutoScrollingTextEditor: NSViewRepresentable {
         scroll.hasHorizontalScroller = false
         scroll.autohidesScrollers = true
         scroll.borderType = .noBorder
-        scroll.drawsBackground = false // we’ll draw bg in the text view
+        scroll.drawsBackground = false
 
         let tv = NSTextView()
         tv.isEditable = isEditable
@@ -38,14 +35,12 @@ struct AutoScrollingTextEditor: NSViewRepresentable {
         tv.isVerticallyResizable = true
         tv.autoresizingMask = [.width]
 
-        // IMPORTANT: make sure it’s visible, not transparent
         tv.drawsBackground = true
         tv.backgroundColor = .textBackgroundColor
         tv.textColor = .textColor
         tv.font = font
         tv.textContainerInset = NSSize(width: 6, height: 6)
 
-        // Make container track width and be “infinitely” tall
         if let tc = tv.textContainer {
             tc.widthTracksTextView = true
             tc.containerSize = NSSize(width: scroll.contentSize.width, height: CGFloat.greatestFiniteMagnitude)
@@ -68,7 +63,7 @@ struct AutoScrollingTextEditor: NSViewRepresentable {
     func updateNSView(_ scroll: NSScrollView, context: Context) {
         guard let tv = scroll.documentView as? NSTextView else { return }
 
-        // Keep container width in sync with scroll view width (fixes “text not visible”)
+        // Keep container width in sync with scroll view width.
         if let tc = tv.textContainer {
             let newWidth = scroll.contentSize.width
             if tc.containerSize.width != newWidth {
