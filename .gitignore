@@ -7,5 +7,5 @@ DerivedData/
 *.xcworkspace
 xcuserdata/
 xcshareddata/WorkspaceSettings.xcsettings
-LatextReport
+LatextReport/*
 
