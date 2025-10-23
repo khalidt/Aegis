@@ -7,11 +7,6 @@
   
 </div>
 
-<p align="center">
-  <a href="https://github.com/khalidt/Aegis/actions/workflows/ci.yml">
-    <img src="https://github.com/khalidt/Aegis/actions/workflows/ci.yml/badge.svg" alt="Build Status">
-  </a>
-</p>
 
 <p align="center">
   <a href="https://github.com/khalidt/Aegis/actions/workflows/ci.yml">
@@ -48,6 +43,23 @@
 - 💬 **Clean SwiftUI interface** — only two buttons: *Encrypt* and *Decrypt*  
 - 💾 **Local key management** — no servers, no data collection  
 
+---
+## Install
+
+Download the latest **Aegis for macOS** from the [Releases](https://github.com/khalidt/Aegis/releases) page and open the `.dmg`.
+- `Aegis.dmg` (recommended) or `Aegis-app.zip`
+
+> First launch: macOS Gatekeeper may warn about an app from the internet. Right-click the app → **Open** → **Open**.
+
+## Build from source
+
+Requirements: Xcode (latest), macOS 15.
+
+```bash
+git clone https://github.com/khalidt/Aegis.git
+cd Aegis
+open Aegis.xcodeproj
+```
 ---
 
 ## 🧩 How It Works
