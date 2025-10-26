@@ -26,9 +26,9 @@
 
 <table>
   <tr>
-    <td><img width="1092" height="1100" alt="1" src="https://github.com/user-attachments/assets/c4f1bc54-294c-4dcd-9994-90bd45e7cf9f" />
-    <td><img width="1092" height="1100" alt="2" src="https://github.com/user-attachments/assets/fb47a519-815e-4ba2-a788-33cbc537ead0" />
-    <td><img width="1092" height="1100" alt="3" src="https://github.com/user-attachments/assets/62ddb9c7-a857-4a2e-9d48-e2997f778ad3" />
+    <td><img width="1092" height="1100" alt="1" src="https://github.com/khalidt/Aegis/blob/main/assets/1.png" />
+    <td><img width="1092" height="1100" alt="2" src="https://github.com/khalidt/Aegis/blob/main/assets/2.png" />
+    <td><img width="1092" height="1100" alt="3" src="https://github.com/khalidt/Aegis/blob/main/assets/3.png" />
   </tr>
 </table>
 
